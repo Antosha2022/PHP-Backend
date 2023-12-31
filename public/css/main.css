@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e8e5da;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background: #2D223D;
+    padding: 20px 100px;
+    color: #e8e5da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a,
+header a {
+    color: #e8e5da;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 500ms ease;
+}
+
+header nav a:hover {
+    color: darkgoldenrod;
+}
+
+header nav a.btn {
+    padding: 5px;
+    border: 1px solid #e8e5da;
+    border-radius: 5px;
+}
+
+main {
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 50%;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    background: #2D223D;
+    color: #e8e5da;
+    margin-top: 200px;
+}
+
+form {
+    margin: 30px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form input {
+    width: 600px;
+    border: 1px solid #2D223D;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+form button,
+.btn-warning,
+#send-mail {
+    border: 0;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ecab5b;
+    color: #2D223D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: transform 500ms ease;
+}
+
+#send-mail {
+    width: 150px;
+}
+
+#exit_user{
+    padding: 7px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ecab5b;
+    color: #2D223D;
+    transition: transform 500ms ease;
+}
+
+form button:hover,
+#exit_user:hover {
+    transform: scale(1.1);
+}
+
+.error-message {
+    color: #c04545;
+    margin: 10px 0;
+    font-weight: 500;
+    display: none;
+}
+
+.mail-message {
+    font-weight: 500;
+    color: #2D223D;
+}
+
+main h1, h2{
+    margin: 10px;
+}
+
+div.user-list {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #ede16c;
+    color: #2D223D;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+div.user-list span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.user-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div .links-list {
+    width: 600px;
+    margin-bottom: 20px;
+    border: 1px solid #ecab5b;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+div .links-list form {
+    margin: 0px;
+}
+
+div.container.main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h4, p {
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+div.error{
+    color: #c04545;
+    margin: 10px 0;
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+}
+textarea {
+    width: 600px;
+    height: 140px;
+    padding: 10px 15px;
+    margin: 10px;
+}

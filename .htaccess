@@ -1,0 +1,15 @@
+AddDefaultCharset UTF-8
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1
+
+ErrorDocument 404 /app/views/error/error404.php
+ErrorDocument 403 /app/views/error/error403.php
+ErrorDocument 500 /app/views/error/error500.php
