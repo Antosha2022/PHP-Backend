@@ -50,6 +50,18 @@ class Feedback{
 
         // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
         // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+        // Attach files
+        if (isset($_FILES['myfile'])) {
+            for ($i = 0; $i < count($_FILES['myfile']['name']); $i++) {
+                $tmpFilePath = $_FILES['myfile']['tmp_name'][$i];
+                        $fileName = $_FILES['myfile']['name'][$i];
+                        
+                        if ($tmpFilePath != "") {
+                            $mail->addAttachment($tmpFilePath, $fileName);
+                        }
+                    }
+                }
         $mail->isHTML(true);                                  // Set email format to HTML
 
         $mail->Subject = 'Нове повідомлення з сайту LarAng від '.$feedbackName;
