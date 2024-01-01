@@ -19,7 +19,7 @@ require 'app/views/home/header.php';
             <h3>Текст повідомлення</h3>
             <textarea name="text" value="<?=$text?>" ></textarea><br>
 <!--            <p>Додати файли</p>-->
-<!--            <input type="file" name="myfile[]" multiple id="myfile">-->
+           <input type="file" name="myfile[]" multiple id="myfile">
             <div class="error"><?=$message?></div>
             <input id="send-mail" value="Відправити" type="submit">
         </form>
