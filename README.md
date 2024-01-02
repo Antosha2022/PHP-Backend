@@ -28,4 +28,5 @@ ____
 to add the library to the project, just 
 - do the composer command `composer require phpmailer/phpmailer`
 - or download from the official site the stable version as a zip archive and unzip it in the root of the project
+  
 Also, when setting up, you need to update the path to the file require '/PHPMailerAutoload.php' in the app/models/Feedback.php.
