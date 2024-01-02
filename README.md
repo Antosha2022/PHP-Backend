@@ -23,9 +23,9 @@ On the page with contacts, the user will be able to send a letter to you by mail
 - redirection to another website when clicking on a shortened link
 
 
-#### the PhpMailer library is not loaded into this repository
+____
+### the PhpMailer library is not loaded into this repository
 to add the library to the project, just 
 - do the composer command `composer require phpmailer/phpmailer`
 - or download from the official site https://github.com/PHPMailer/PHPMailer the stable version as a zip archive and unzip it in the root of the project
-
 Also, when setting up, you need to update the path to the file require '/PHPMailerAutoload.php' in the feedback model.
